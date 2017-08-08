@@ -1,4 +1,5 @@
 import { Component, Input, Inject, ElementRef } from '@angular/core';
+import {MainNavComponent} from './main-nav/main-nav.component';
 import * as jQuery from 'jquery';
 
 
