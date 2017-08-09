@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.css";
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,600,700,900|Titillium+Web:300,400,600,700,900');
 
 html{
     margin: 0;
@@ -21,13 +21,19 @@ h1{
 }
 
 h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+h3{
     font-family: 'Merriweather', serif;
     font-weight: 900;
     font-style: italic;
     font-size: 24px;
 }
 
-h3{
+h4{
     font-family: 'Merriweather', serif;
     font-weight: 900;
     font-style: italic;
@@ -40,14 +46,27 @@ p{
     font-size: 16px;
 }
 
-.container-fluid{
-    position: relative;
-    margin: 0 !important;
-    margin-top: 50px !important;
-    width: 90%;
-    left: 10%;
-}
-
 app-main-nav{
     z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 98vh;
+    width: 100vw;
+}
+
+.ani0_5{
+    transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.ani0_75{
+    transition: all .75s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.ani1{
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.ani2{
+    transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }

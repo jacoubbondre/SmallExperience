@@ -8,6 +8,7 @@ import { WorkWithUsComponent } from './work-with-us/work-with-us.component';
 import { HomeComponent } from './home/home.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { MainNavButtonsComponent } from './main-nav-buttons/main-nav-buttons.component';
+import { MainNavButtonDirective } from './main-nav-button.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MainNavButtonsComponent } from './main-nav-buttons/main-nav-buttons.com
     WorkWithUsComponent,
     HomeComponent,
     MainNavComponent,
-    MainNavButtonsComponent
+    MainNavButtonsComponent,
+    MainNavButtonDirective
   ],
   imports: [
     BrowserModule,
